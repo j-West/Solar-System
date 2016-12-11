@@ -21,3 +21,12 @@ var capitalizedPlanets = planets.map(function(planet) {
 })
 
 console.log(capitalizedPlanets);
+
+// Use the filter method to create a new array that contains planets with the letter 'e'
+var planetsWithE = planets.filter(function(planet) {
+  if (planet.indexOf("e") !== -1) {
+      return planet
+  }
+})
+
+console.log(planetsWithE);
