@@ -30,3 +30,16 @@ var planetsWithE = planets.filter(function(planet) {
 })
 
 console.log(planetsWithE);
+
+// Use the reduce method to create a sentence from the words in the following array
+var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+
+words = words.reduce(function(sentence, word) {
+  if (word !== words[words.length - 1]) {
+    return sentence + word + " "
+  } else {
+    return sentence + word
+  }
+}, "")
+
+console.log(words);
